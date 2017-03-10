@@ -47,6 +47,8 @@
             <xsl:copy-of select="remote"/>
             <xsl:copy-of select="requiremin"/>
             <xsl:copy-of select="requiremax"/>
+            <xsl:copy-of select="settings"/>
+            <xsl:copy-of select="activity"/>
         </info>
     </xsl:template>
 
