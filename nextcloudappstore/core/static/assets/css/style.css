@@ -11,6 +11,7 @@ body {
 #container {
     min-height: 100%;
     position: relative;
+    background: linear-gradient(to bottom, #0082c9, #3e9ed8 100%, #d8d8d8)
 }
 
 #body {
@@ -65,7 +66,7 @@ body {
     border-top: 1px solid #e7e7e7;
 }
 
-.banner {
+/*.banner {
     position: relative;
     height: 63px;
     background-color: var(--bg-color);
@@ -89,10 +90,7 @@ body {
     text-decoration: none !important;
 }
 
-.brand .logo {
-    display: inline-block;
-    height: 40px;
-}
+
 
 .brand .site-title {
     display: inline-block;
@@ -169,6 +167,22 @@ body {
         margin: 0 auto;
         margin-bottom: 40px;
     }
+}*/
+
+.navbar {
+    background-color: var(--alt-bg-color);
+}
+
+.brand .logo {
+    display: inline-block;
+    height: 80px;
+    padding: 10px 30px 10px 0;
+}
+
+li.nav-link > a {
+    font-size: 13pt;
+    color: #444 !important;
+    line-height: 80px;
 }
 
 #sidebar.nav {
@@ -177,15 +191,6 @@ body {
 
 .nav-heading {
     font-size: 12pt;
-}
-
-.nav-link > a {
-    color: #fff;
-    font-size: 12pt;
-}
-
-.nav-link > a:hover {
-    text-decoration: underline;
 }
 
 .central-form {

@@ -1,8 +1,7 @@
 {% load staticfiles %}
 {% load i18n %}
-<div class="banner">
+<!--<div class="banner">
     <div class="container">
-        <a class="brand" href="/"><img class="logo" src="{% static 'assets/img/small-logo.png' %}" title="nextcloud.com" itemprop="logo"><div class="site-title"></div></a>
         <form method="get"
               action="{% if current_category %}{{ request.path }}
                       {% else %}{% url 'home' %}
@@ -25,7 +24,7 @@
             <input type="submit" value="{% trans 'Search' %}" class="search-button">
         </form>
     </div>
-</div>
+</div> -->
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
@@ -38,10 +37,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse ">
             <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a class="brand" href="/"><img class="logo" src="{% static 'assets/img/small-logo-blue.png' %}" title="nextcloud.com" itemprop="logo"><div class="site-title"></div></a>
+                </li>
                 <li class="nav-link">
                     <a href="{% url 'home' %}">{% trans 'Apps' %}</a>
                 </li>
-                <li role="presentation" class="dropdown">
+                <li role="presentation" class="dropdown nav-link">
                     <a class="dropdown-toggle nav-heading" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
                         {% trans 'App developer' %} <span class="caret"></span>
                     </a>
