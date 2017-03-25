@@ -18,9 +18,11 @@
     text-decoration: underline;
 }
 
-#body .nav-pills .active a {
+#body .nav-pills .active a,
+#body .nav-pills a:hover {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
+    text-decoration: none;
 }
 
 #body .nav-pills a {
@@ -28,10 +30,9 @@
     border-radius: var(--border-radius);
     color: var(--link-active-color);
     font-size: 14pt;
-}
-
-#body .nav-pills a:hover {
-    text-decoration: underline;
+    border: 1px solid transparent;
+    padding: 10px;
+    display: block;
 }
 
 #body .nav-tabs a {
@@ -39,14 +40,16 @@
     border-radius: 0;
     border: 0;
     font-size: 12pt;
+    color: var(--link-active-color);
 }
 
 #body .nav-tabs a:hover,
 #body .nav-tabs .active a {
-    background-color: var(--bg-color);
-    color: var(--link-active-color);
     text-decoration: none;
     cursor: pointer;
+    background-color: var(--link-active-color);
+    color: var(--link-color);
+
 }
 
 .well,
